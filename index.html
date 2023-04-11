@@ -14,9 +14,15 @@
 </head>
 <body>
     <div id="app">
-        <ul v-if="listaEmail.length === numeroIndirizzi" v-for="(email,indice) in listaEmail">
-            <li>{{ email }}</li>
-        </ul>
+        <h1>LISTA EMAIL</h1>
+        <div class="container">
+            <ul>
+                <li v-if="listaEmail.length === numeroIndirizzi" v-for="(email,indice) in listaEmail">
+                    <h3>{{ indice+1 }}</h3>
+                    <h2>{{ email }}</h2>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <!-- Script  -->
