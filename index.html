@@ -7,9 +7,17 @@
     <title>Vue Email List</title>
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-    
+    <div id="app">
+        <ul v-for="(email) in listaEmail">
+            <li>{{ email }}</li>
+        </ul>
+    </div>
 
     <!-- Script  -->
     <script src="js/script.js"></script>
